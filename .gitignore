@@ -43,3 +43,6 @@
 # Emacs files
 *~
 \#*\#
+
+# Master files
+/db/MEDIS*
