@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Receden medications</h1>
+
+<div id="receden_medications">
+  <% @receden_medications.each do |receden_medication| %>
+    <%= render receden_medication %>
+    <p>
+      <%= link_to "Show this receden medication", receden_medication %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New receden medication", new_receden_medication_path %>

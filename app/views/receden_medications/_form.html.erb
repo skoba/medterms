@@ -1,0 +1,192 @@
+<%= form_with(model: receden_medication) do |form| %>
+  <% if receden_medication.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(receden_medication.errors.count, "error") %> prohibited this receden_medication from being saved:</h2>
+
+      <ul>
+        <% receden_medication.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :update_cat, style: "display: block" %>
+    <%= form.number_field :update_cat %>
+  </div>
+
+  <div>
+    <%= form.label :master_type, style: "display: block" %>
+    <%= form.text_field :master_type %>
+  </div>
+
+  <div>
+    <%= form.label :drug_code, style: "display: block" %>
+    <%= form.text_field :drug_code %>
+  </div>
+
+  <div>
+    <%= form.label :kanji_len, style: "display: block" %>
+    <%= form.number_field :kanji_len %>
+  </div>
+
+  <div>
+    <%= form.label :kanji_name, style: "display: block" %>
+    <%= form.text_field :kanji_name %>
+  </div>
+
+  <div>
+    <%= form.label :kana_len, style: "display: block" %>
+    <%= form.number_field :kana_len %>
+  </div>
+
+  <div>
+    <%= form.label :kana_name, style: "display: block" %>
+    <%= form.text_field :kana_name %>
+  </div>
+
+  <div>
+    <%= form.label :unit_code, style: "display: block" %>
+    <%= form.number_field :unit_code %>
+  </div>
+
+  <div>
+    <%= form.label :unit_len, style: "display: block" %>
+    <%= form.number_field :unit_len %>
+  </div>
+
+  <div>
+    <%= form.label :unit_name, style: "display: block" %>
+    <%= form.text_field :unit_name %>
+  </div>
+
+  <div>
+    <%= form.label :price_category, style: "display: block" %>
+    <%= form.number_field :price_category %>
+  </div>
+
+  <div>
+    <%= form.label :price, style: "display: block" %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div>
+    <%= form.label :reserved13, style: "display: block" %>
+    <%= form.number_field :reserved13 %>
+  </div>
+
+  <div>
+    <%= form.label :narcotics_category, style: "display: block" %>
+    <%= form.number_field :narcotics_category %>
+  </div>
+
+  <div>
+    <%= form.label :nerve_destroying, style: "display: block" %>
+    <%= form.number_field :nerve_destroying %>
+  </div>
+
+  <div>
+    <%= form.label :bio, style: "display: block" %>
+    <%= form.number_field :bio %>
+  </div>
+
+  <div>
+    <%= form.label :generic, style: "display: block" %>
+    <%= form.number_field :generic %>
+  </div>
+
+  <div>
+    <%= form.label :reserved18, style: "display: block" %>
+    <%= form.number_field :reserved18 %>
+  </div>
+
+  <div>
+    <%= form.label :dent_specific, style: "display: block" %>
+    <%= form.number_field :dent_specific %>
+  </div>
+
+  <div>
+    <%= form.label :enhancer, style: "display: block" %>
+    <%= form.number_field :enhancer %>
+  </div>
+
+  <div>
+    <%= form.label :injection_volume, style: "display: block" %>
+    <%= form.text_field :injection_volume %>
+  </div>
+
+  <div>
+    <%= form.label :registration_category, style: "display: block" %>
+    <%= form.number_field :registration_category %>
+  </div>
+
+  <div>
+    <%= form.label :product_name_code, style: "display: block" %>
+    <%= form.number_field :product_name_code %>
+  </div>
+
+  <div>
+    <%= form.label :old_price_category, style: "display: block" %>
+    <%= form.number_field :old_price_category %>
+  </div>
+
+  <div>
+    <%= form.label :old_price, style: "display: block" %>
+    <%= form.text_field :old_price %>
+  </div>
+
+  <div>
+    <%= form.label :kanji_update_category, style: "display: block" %>
+    <%= form.number_field :kanji_update_category %>
+  </div>
+
+  <div>
+    <%= form.label :kana_update_category, style: "display: block" %>
+    <%= form.number_field :kana_update_category %>
+  </div>
+
+  <div>
+    <%= form.label :drug_form, style: "display: block" %>
+    <%= form.number_field :drug_form %>
+  </div>
+
+  <div>
+    <%= form.label :reserve29, style: "display: block" %>
+    <%= form.text_area :reserve29 %>
+  </div>
+
+  <div>
+    <%= form.label :updated_date, style: "display: block" %>
+    <%= form.date_field :updated_date %>
+  </div>
+
+  <div>
+    <%= form.label :abolition_date, style: "display: block" %>
+    <%= form.date_field :abolition_date %>
+  </div>
+
+  <div>
+    <%= form.label :mhlwcode, style: "display: block" %>
+    <%= form.text_field :mhlwcode %>
+  </div>
+
+  <div>
+    <%= form.label :publication_order, style: "display: block" %>
+    <%= form.number_field :publication_order %>
+  </div>
+
+  <div>
+    <%= form.label :expiration_date, style: "display: block" %>
+    <%= form.date_field :expiration_date %>
+  </div>
+
+  <div>
+    <%= form.label :product_name, style: "display: block" %>
+    <%= form.text_area :product_name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
