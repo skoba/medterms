@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "MedicationTerminology",
   "private": "true",
   "dependencies": {
     "@popperjs/core": "^2.11.8",
@@ -10,5 +10,9 @@
     "postcss": "^8.4.33",
     "postcss-cli": "^11.0.0",
     "sass": "^1.70.0"
+  },
+  "scripts": {
+    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss ./app/assets/builds/application.css --no-source-map --load-path=node_modules",
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds"
   }
 }

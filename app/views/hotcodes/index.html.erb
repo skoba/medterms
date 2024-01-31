@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Hotcodes</h1>
+
+<div id="hotcodes">
+  <% @hotcodes.each do |hotcode| %>
+    <%= render hotcode %>
+    <p>
+      <%= link_to "Show this hotcode", hotcode %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New hotcode", new_hotcode_path %>

@@ -1,0 +1,2 @@
+class Hotcode < ApplicationRecord
+end

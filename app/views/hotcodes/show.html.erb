@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @hotcode %>
+
+<div>
+  <%= link_to "Edit this hotcode", edit_hotcode_path(@hotcode) %> |
+  <%= link_to "Back to hotcodes", hotcodes_path %>
+
+  <%= button_to "Destroy this hotcode", @hotcode, method: :delete %>
+</div>
