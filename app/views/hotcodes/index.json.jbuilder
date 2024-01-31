@@ -1,1 +1,1 @@
-json.array! @hotcodes, partial: "hotcodes/hotcode", as: :hotcode
+json.array! @hotcodes, partial: 'hotcodes/hotcode', as: :hotcode

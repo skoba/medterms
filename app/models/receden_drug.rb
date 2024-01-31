@@ -1,0 +1,2 @@
+class RecedenDrug < ApplicationRecord
+end

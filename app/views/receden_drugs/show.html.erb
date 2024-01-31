@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @receden_drug %>
+
+<div>
+  <%= link_to "Edit this receden drug", edit_receden_drug_path(@receden_drug) %> |
+  <%= link_to "Back to receden drugs", receden_drugs_path %>
+
+  <%= button_to "Destroy this receden drug", @receden_drug, method: :delete %>
+</div>

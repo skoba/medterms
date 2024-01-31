@@ -8,7 +8,8 @@
     <p>
       <%= link_to "Show this hotcode", hotcode %>
     </p>
+
   <% end %>
 </div>
-
+<%= paginate @hotcodes, theme: 'bootstrap-5' %>
 <%= link_to "New hotcode", new_hotcode_path %>

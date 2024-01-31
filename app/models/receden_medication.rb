@@ -1,2 +1,0 @@
-class RecedenMedication < ApplicationRecord
-end

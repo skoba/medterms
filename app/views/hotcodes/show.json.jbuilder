@@ -1,1 +1,1 @@
-json.partial! "hotcodes/hotcode", hotcode: @hotcode
+json.partial! 'hotcodes/hotcode', hotcode: @hotcode
