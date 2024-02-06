@@ -10,7 +10,7 @@ FactoryBot.define do
     disease_abbrv_name { '１１β−水酸化酵素欠損症' }
     disease_kana_len { 21 }
     disease_kana_name { '１１ベータ−スイサンカコウソケッソンショウ' }
-    disease_control_num { 20100524 }
+    disease_control_num { 20_100_524 }
     adoption_category { 1 }
     exchange_code { 'QJ83' }
     icd_10_1 { '' }

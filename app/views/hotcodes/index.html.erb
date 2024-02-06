@@ -1,15 +1,24 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Hotcodes</h1>
+<h1>HOTコード</h1>
+<%= form_with url: hotcodes_path, method: :get,
+                   html: { data: {
+                     turbo_frame: 'hotcode-list',
+                     controller: 'form',
+                     action: 'input->form#submit'
+                   }} do |form| %>
+  <%= form.text_field :mhlw %>
+  <%= form.submit :search %>
+<% end %>
 
 <div id="hotcodes">
-  <% @hotcodes.each do |hotcode| %>
-    <%= render hotcode %>
-    <p>
-      <%= link_to "Show this hotcode", hotcode %>
-    </p>
-
+  <%= turbo_frame_tag 'hotcode-list' do %>
+    <% @hotcodes.each do |hotcode| %>
+      <%= render hotcode %>
+      <p>
+        <%= link_to "Show this hotcode", hotcode %>
+      </p>
+    <% end %>
   <% end %>
 </div>
 <%= paginate @hotcodes, theme: 'bootstrap-5' %>
-<%= link_to "New hotcode", new_hotcode_path %>

@@ -3,7 +3,12 @@ class HotcodesController < ApplicationController
 
   # GET /hotcodes or /hotcodes.json
   def index
-    @hotcodes = Hotcode.page(params[:page]).per(25)
+    @hotcodes = if params[:mhlw].present?
+                  Hotcode.where('mhlw LIKE ?', "#{params[:mhlw]}%")
+                    .page(params[:page]).per(25)
+                else
+                  Hotcode.page(params[:page]).per(25)
+                end
   end
 
   # GET /hotcodes/1 or /hotcodes/1.json
