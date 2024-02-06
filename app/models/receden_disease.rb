@@ -1,0 +1,2 @@
+class RecedenDisease < ApplicationRecord
+end

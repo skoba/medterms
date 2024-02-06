@@ -52,7 +52,10 @@ class HotcodesController < ApplicationController
     @hotcode.destroy!
 
     respond_to do |format|
-      format.html { redirect_to hotcodes_url, notice: 'Hotcode was successfully destroyed.' }
+      format.html do
+        redirect_to hotcodes_url,
+                    notice: 'Hotcode was successfully destroyed.'
+      end
       format.json { head :no_content }
     end
   end
@@ -66,7 +69,14 @@ class HotcodesController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def hotcode_params
-    params.require(:hotcode).permit(:standard_hot, :hot7, :manufacturer_code, :preparation_code, :logistics_code, :jan, :mhlw,
-                                    :yj, :receden_code1, :receden_code2, :notice, :product_name, :receden_name, :unit, :package_style, :package_unit_num, :package_unit_unit, :total_package_unit_num, :total_package_unit_unit, :category, :manufacturer, :seller, :update_category, :update_date)
+    params.require(:hotcode).permit(:standard_hot, :hot7, :manufacturer_code,
+                                    :preparation_code, :logistics_code, :jan,
+                                    :mhlw, :yj, :receden_code1, :receden_code2,
+                                    :notice, :product_name, :receden_name,
+                                    :unit, :package_style, :package_unit_num,
+                                    :package_unit_unit, :total_package_unit_num,
+                                    :total_package_unit_unit, :category,
+                                    :manufacturer, :seller, :update_category,
+                                    :update_date)
   end
 end

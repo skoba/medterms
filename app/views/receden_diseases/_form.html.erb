@@ -1,0 +1,237 @@
+<%= form_with(model: receden_disease) do |form| %>
+  <% if receden_disease.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(receden_disease.errors.count, "error") %> prohibited this receden_disease from being saved:</h2>
+
+      <ul>
+        <% receden_disease.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :update_category, style: "display: block" %>
+    <%= form.number_field :update_category %>
+  </div>
+
+  <div>
+    <%= form.label :master_type, style: "display: block" %>
+    <%= form.text_field :master_type %>
+  </div>
+
+  <div>
+    <%= form.label :disease_code, style: "display: block" %>
+    <%= form.text_field :disease_code %>
+  </div>
+
+  <div>
+    <%= form.label :transfer_code, style: "display: block" %>
+    <%= form.text_field :transfer_code %>
+  </div>
+
+  <div>
+    <%= form.label :disease_base_name_len, style: "display: block" %>
+    <%= form.number_field :disease_base_name_len %>
+  </div>
+
+  <div>
+    <%= form.label :disease_base_name, style: "display: block" %>
+    <%= form.text_field :disease_base_name %>
+  </div>
+
+  <div>
+    <%= form.label :disease_abbrv_len, style: "display: block" %>
+    <%= form.number_field :disease_abbrv_len %>
+  </div>
+
+  <div>
+    <%= form.label :disease_abbrv_name, style: "display: block" %>
+    <%= form.text_field :disease_abbrv_name %>
+  </div>
+
+  <div>
+    <%= form.label :disease_kana_len, style: "display: block" %>
+    <%= form.number_field :disease_kana_len %>
+  </div>
+
+  <div>
+    <%= form.label :disease_kana_name, style: "display: block" %>
+    <%= form.text_field :disease_kana_name %>
+  </div>
+
+  <div>
+    <%= form.label :disease_control_num, style: "display: block" %>
+    <%= form.number_field :disease_control_num %>
+  </div>
+
+  <div>
+    <%= form.label :adoption_category, style: "display: block" %>
+    <%= form.number_field :adoption_category %>
+  </div>
+
+  <div>
+    <%= form.label :exchange_code, style: "display: block" %>
+    <%= form.text_field :exchange_code %>
+  </div>
+
+  <div>
+    <%= form.label :icd-10-1, style: "display: block" %>
+    <%= form.text_field :icd-10-1 %>
+  </div>
+
+  <div>
+    <%= form.label :icd-10-2, style: "display: block" %>
+    <%= form.text_field :icd-10-2 %>
+  </div>
+
+  <div>
+    <%= form.label :icd-10-1_2013, style: "display: block" %>
+    <%= form.text_field :icd-10-1_2013 %>
+  </div>
+
+  <div>
+    <%= form.label :icd-10-2_2013, style: "display: block" %>
+    <%= form.text_field :icd-10-2_2013 %>
+  </div>
+
+  <div>
+    <%= form.label :reservation_18, style: "display: block" %>
+    <%= form.text_field :reservation_18 %>
+  </div>
+
+  <div>
+    <%= form.label :stand_alone_prohibition, style: "display: block" %>
+    <%= form.text_field :stand_alone_prohibition %>
+  </div>
+
+  <div>
+    <%= form.label :not_claim, style: "display: block" %>
+    <%= form.number_field :not_claim %>
+  </div>
+
+  <div>
+    <%= form.label :specific_disease_category, style: "display: block" %>
+    <%= form.text_field :specific_disease_category %>
+  </div>
+
+  <div>
+    <%= form.label :registered_date, style: "display: block" %>
+    <%= form.date_field :registered_date %>
+  </div>
+
+  <div>
+    <%= form.label :updated_date, style: "display: block" %>
+    <%= form.date_field :updated_date %>
+  </div>
+
+  <div>
+    <%= form.label :disease_base_name_update, style: "display: block" %>
+    <%= form.number_field :disease_base_name_update %>
+  </div>
+
+  <div>
+    <%= form.label :disease_name_abbrv_update, style: "display: block" %>
+    <%= form.number_field :disease_name_abbrv_update %>
+  </div>
+
+  <div>
+    <%= form.label :disease_kana_update, style: "display: block" %>
+    <%= form.number_field :disease_kana_update %>
+  </div>
+
+  <div>
+    <%= form.label :adoption_category_update, style: "display: block" %>
+    <%= form.number_field :adoption_category_update %>
+  </div>
+
+  <div>
+    <%= form.label :exchange_code_update, style: "display: block" %>
+    <%= form.number_field :exchange_code_update %>
+  </div>
+
+  <div>
+    <%= form.label :icd-10-1_update, style: "display: block" %>
+    <%= form.number_field :icd-10-1_update %>
+  </div>
+
+  <div>
+    <%= form.label :icd-10-2_update, style: "display: block" %>
+    <%= form.number_field :icd-10-2_update %>
+  </div>
+
+  <div>
+    <%= form.label :dental_abbrv_update, style: "display: block" %>
+    <%= form.number_field :dental_abbrv_update %>
+  </div>
+
+  <div>
+    <%= form.label :nambyo_category_update, style: "display: block" %>
+    <%= form.number_field :nambyo_category_update %>
+  </div>
+
+  <div>
+    <%= form.label :dental_specific_disease_category, style: "display: block" %>
+    <%= form.number_field :dental_specific_disease_category %>
+  </div>
+
+  <div>
+    <%= form.label :stand_alone_prohibition_update, style: "display: block" %>
+    <%= form.number_field :stand_alone_prohibition_update %>
+  </div>
+
+  <div>
+    <%= form.label :not_claim_update, style: "display: block" %>
+    <%= form.number_field :not_claim_update %>
+  </div>
+
+  <div>
+    <%= form.label :specific_disease_update, style: "display: block" %>
+    <%= form.number_field :specific_disease_update %>
+  </div>
+
+  <div>
+    <%= form.label :changed_code, style: "display: block" %>
+    <%= form.text_field :changed_code %>
+  </div>
+
+  <div>
+    <%= form.label :dental_disease_abbrv, style: "display: block" %>
+    <%= form.text_field :dental_disease_abbrv %>
+  </div>
+
+  <div>
+    <%= form.label :reservation40, style: "display: block" %>
+    <%= form.text_field :reservation40 %>
+  </div>
+
+  <div>
+    <%= form.label :reservation41, style: "display: block" %>
+    <%= form.text_field :reservation41 %>
+  </div>
+
+  <div>
+    <%= form.label :nambyo_outpatient_category, style: "display: block" %>
+    <%= form.text_field :nambyo_outpatient_category %>
+  </div>
+
+  <div>
+    <%= form.label :dental_specific_disease_category, style: "display: block" %>
+    <%= form.text_field :dental_specific_disease_category %>
+  </div>
+
+  <div>
+    <%= form.label :icd-10-1_2013_update, style: "display: block" %>
+    <%= form.number_field :icd-10-1_2013_update %>
+  </div>
+
+  <div>
+    <%= form.label :icd-10-2_2013_update, style: "display: block" %>
+    <%= form.number_field :icd-10-2_2013_update %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

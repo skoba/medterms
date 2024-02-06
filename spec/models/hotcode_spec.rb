@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe Hotcode, type: :model do
+RSpec.describe Hotcode do
   pending "add some examples to (or delete) #{__FILE__}"
 end

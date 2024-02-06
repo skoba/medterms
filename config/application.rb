@@ -47,5 +47,6 @@ module Medterms
                        helper_specs: false,
                        routing_specs: false
     end
+    config.log_file_size = 5.megabytes
   end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_31_101806) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_05_064335) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -39,6 +39,56 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_31_101806) do
     t.string "seller"
     t.string "update_category"
     t.date "update_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "receden_diseases", force: :cascade do |t|
+    t.integer "update_category"
+    t.string "master_type"
+    t.string "disease_code"
+    t.string "transfer_code"
+    t.integer "disease_base_name_len"
+    t.string "disease_base_name"
+    t.integer "disease_abbrv_len"
+    t.string "disease_abbrv_name"
+    t.integer "disease_kana_len"
+    t.string "disease_kana_name"
+    t.integer "disease_control_num"
+    t.integer "adoption_category"
+    t.string "exchange_code"
+    t.string "icd_10_1"
+    t.string "icd_10_2"
+    t.string "icd_10_1_2013"
+    t.string "icd_10_2_2013"
+    t.string "reservation_18"
+    t.string "stand_alone_prohibition"
+    t.integer "not_claim"
+    t.string "specific_disease_category"
+    t.date "registered_date"
+    t.date "updated_date"
+    t.integer "disease_base_name_update"
+    t.integer "disease_name_abbrv_update"
+    t.integer "disease_kana_update"
+    t.integer "adoption_category_update"
+    t.integer "exchange_code_update"
+    t.integer "icd_10_1_update"
+    t.integer "icd_10_2_update"
+    t.integer "dental_abbrv_update"
+    t.integer "nambyo_category_update"
+    t.integer "dental_specific_disease_category_update"
+    t.integer "stand_alone_prohibition_update"
+    t.integer "not_claim_update"
+    t.integer "specific_disease_update"
+    t.string "changed_code"
+    t.string "dental_disease_abbrv"
+    t.string "reservation40"
+    t.decimal "reservation41"
+    t.integer "dental_disease_abbrv_len"
+    t.string "nambyo_outpatient_category"
+    t.string "dental_specific_disease_category"
+    t.integer "icd_10_1_2013_update"
+    t.integer "icd_10_2_2013_update"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

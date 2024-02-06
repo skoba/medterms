@@ -1,0 +1,49 @@
+FactoryBot.define do
+  factory :receden_disease do
+    update_category { 0 }
+    master_type { 'B' }
+    disease_code { '8848176' }
+    transfer_code { '8848176' }
+    disease_base_name_len { 12 }
+    disease_base_name { '１１β−水酸化酵素欠損症' }
+    disease_abbrv_len { 12 }
+    disease_abbrv_name { '１１β−水酸化酵素欠損症' }
+    disease_kana_len { 21 }
+    disease_kana_name { '１１ベータ−スイサンカコウソケッソンショウ' }
+    disease_control_num { 20100524 }
+    adoption_category { 1 }
+    exchange_code { 'QJ83' }
+    icd_10_1 { '' }
+    icd_10_2 { '' }
+    icd_10_1_2013 { 'E250' }
+    icd_10_2_2013 { '' }
+    reservation_18 { '' }
+    stand_alone_prohibition { '00' }
+    not_claim { 0 }
+    specific_disease_category { '00' }
+    registered_date { '2015-01-01' }
+    updated_date { nil }
+    disease_base_name_update { 0 }
+    disease_name_abbrv_update { 0 }
+    disease_kana_update { 0 }
+    adoption_category_update { 0 }
+    exchange_code_update { 0 }
+    icd_10_1_update { 0 }
+    icd_10_2_update { 0 }
+    dental_abbrv_update { 0 }
+    nambyo_category_update { 0 }
+    dental_specific_disease_category { 0 }
+    stand_alone_prohibition_update { 0 }
+    not_claim_update { 0 }
+    specific_disease_update { 0 }
+    changed_code { '' }
+    dental_disease_abbrv { '１１β−水酸化酵素欠損症' }
+    reservation40 { '' }
+    reservation41 { nil }
+    dental_disease_abbrv_len { 12 }
+    nambyo_outpatient_category { '00' }
+    dental_specific_disease_category { '00' }
+    icd_10_1_2013_update { 0 }
+    icd_10_2_2013_update { 0 }
+  end
+end
