@@ -19,6 +19,6 @@
         <%= link_to "Show this hotcode", hotcode %>
       </p>
     <% end %>
+    <%= paginate @hotcodes, theme: 'bootstrap-5' %>
   <% end %>
 </div>
-<%= paginate @hotcodes, theme: 'bootstrap-5' %>
